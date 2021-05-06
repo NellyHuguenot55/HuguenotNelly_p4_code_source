@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 #page-loading-blocs-notifaction {
@@ -39,6 +40,10 @@ a:hover {
     position: relative;
 }
 
+.container {
+    max-width: 1000px;
+}
+
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -54,6 +59,95 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+}
+
+
+/* --------------------- HEADINGS ------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-weight: 400;
+    /* color: white!important; */
+}
+
+h1 {
+    color: #ffff;
+}
+
+h2 {
+    color: #575757;
+    font-size: 1.7em;;
+    /* line-height: 1.4em;  */
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #575757;
+}
+
+/* Style de la citation */
+q {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.quote_owner { 
+    font-weight: bold; 
+    color: #575757;
+}
+
+.blue_link { /* Lien cliquable vers site web de la citation */
+    color: #0000EE;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* ------------------ LES EXCEPTIONS <SPAN SUBTITLES> -----------  */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* BREAKPOINTS des textes */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+    q {
+        display: block;
+        max-width: 290px;
+        margin: auto;
+        font-size: 0.8em;
+    }
+    .quote_owner {
+        font-size: 0.7em;
+        font-weight: bold; 
+        color: black;
+    }
 }
 
 .bg-center,
@@ -90,11 +184,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
@@ -123,15 +212,10 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
-.d-bloc h2 a,
 .d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
 }
@@ -144,11 +228,8 @@ a:hover {
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
+
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
@@ -225,11 +306,8 @@ a:hover {
 .l-bloc a .icon-lg,
 .l-bloc a .icon-xl,
 .l-bloc h1 a,
-.l-bloc h2 a,
 .l-bloc h3 a,
-.l-bloc h4 a,
-.l-bloc h5 a,
-.l-bloc h6 a,
+
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
 }
@@ -243,11 +321,7 @@ a:hover {
 .l-bloc a:hover .icon-lg,
 .l-bloc a:hover .icon-xl,
 .l-bloc h1 a:hover,
-.l-bloc h2 a:hover,
 .l-bloc h3 a:hover,
-.l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
 }
@@ -283,17 +357,24 @@ a:hover {
     padding-left: 0;
 }
 
+.row-center {
+    width: 90px;
+    margin: auto;
+}
+
 #bloc-1-hero h1 {
     font-size: 32px;
 }
 
+
+
+/* ------------------------- NAVBAR ----------------------------*/
 .navbar {
     margin-bottom: 0;
     z-index: 1;
 }
 
 .navbar-brand {
-    height: auto;
     padding: 3px 15px;
     font-size: 25px;
     font-weight: normal;
@@ -302,9 +383,10 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
     margin: 0 5px 0 0;
-    display: inline;
+    display: inline; 
+    height: 50px;
+    width: 270px; 
 }
 
 .navbar-brand img[src$=svg] {
@@ -335,6 +417,12 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    font-weight: bold;
+    background-color: #F3976C;
+}
+
+.nav a {
+   font-weight: bold;
 }
 
 .navbar-toggle {
@@ -445,6 +533,16 @@ nav .caret {
     margin-bottom: 40px;
 }
 
+
+/* Logo chouette */
+
+.image-resize-mode {
+    width: 100px;
+    height: 100px;
+}
+
+/* ----------------------------- BUTTON ------------------------------*/
+
 .btn {
     margin: 0 5px 5px 0;
 }
@@ -475,6 +573,7 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
+/* ----------------------------------------------------------------- */
 .icon-md {
     font-size: 30px!important;
 }
@@ -508,9 +607,33 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    width: 500px;
 }
 
-.scrollToTop {
+.form-group {
+    width: 500px;
+}
+
+@media (max-width:500px) {
+    .form-control, 
+    .form-group {
+        width: 300px;
+    }
+}
+
+.partner_flex {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.partner {
+    color: black;
+    /* font-weight: bold; */
+    font-size: 1.1em;
+    padding: 0 10px 0 10px;
+}
+
+/* .scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -528,6 +651,35 @@ button {
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
+} */
+
+
+/* ------------------- PORTFOLIO -------------------- */
+
+.portfolio-thumb {
+    margin-bottom: 24px;
+}
+
+.portfolio-row {
+    margin-bottom: 44px;
+    margin-top: 50px;
+    width: 650px;
+    margin: auto;
+}
+
+/* @media screen (max-width: 400px) {
+    portfolio-row {
+        width: 320px;
+    }
+} */
+
+.col-sm-6 {
+    width: 320px;
+}
+
+.img-responsive {
+    width: 290px;
+    height: 290px;
 }
 
 a[data-lightbox] {
@@ -639,25 +791,8 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
 
-.container {
-    max-width: 1000px;
-}
-
+/* ------------ 2 HERO BLOCKS (TOP - BOTTOM ) -----------------*/
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -676,18 +811,29 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    background-color: rgba(243, 151, 108, .8);
+    padding: 10px 0 10px 0; 
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
+@media (max-width: 500px) {
+    .tight-width-whitespace {
+        width: 300px;
+    }
+}
+
+tight-width-whitespace-trspt {
+    max-width: 600px;
+    margin: auto auto auto auto;
+    padding: 10px 0 10px 0; 
+}
+
+@media (max-width: 767px) {
+    .tight-width-whitespace-trspt {
+        width: 320px;
+    }
 }
 
 .cta-hero {
@@ -699,21 +845,18 @@ p {
     font-weight: 700;
 }
 
+/* -----------------  RESEAUX SOCIAUX ----------------------*/
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
+@media (max-width: 767px) { 
+    .social_flex {
+        display: flex; 
+        justify-content: space-around;
+    }
 }
 
 .med-width-whitespace {
@@ -722,14 +865,9 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
+.icon-md {
+    color: #575757;
 }
-
-h4 {
-    color: #333333!important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -739,19 +877,15 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
 
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
+
+
+
+/* --------------------------- BACKGROUNDS ---------------------- */
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -774,26 +908,33 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
+.tc-black {
+    color: black;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: white;
+    color: black!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine-reverse:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
 
-.ltc-white {
-    color: #FFFFFF!important;
+.btn-atomic-tangerine-reverse {
+    background:  #F3976C;
+    color: black!important;
 }
 
-.ltc-white:hover {
-    color: #cccccc!important;
+.ltc-white {
+    color: black!important;
+}
+
+.ltc-white:hover, 
+.partner:hover {
+    color: #ffff!important;
 }
 
 .ltc-atomic-tangerine {
@@ -810,19 +951,20 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg_resultat.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg_resultat.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere_resultat.webp");
+    width: 100%;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation_resultat.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +990,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +1014,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +1023,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /* padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right); */
     }
 }
 
@@ -945,7 +1084,7 @@ h4 {
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
-    #hero-bloc .navbar .nav a {
+    #hero-bloc .navbar  {
         color: rgba(255, 255, 255, .6);
     }
     .hero {
