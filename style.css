@@ -953,16 +953,16 @@ tight-width-whitespace-trspt {
 
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg_resultat.webp");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere_resultat_resultat.webp");
+    background-image: url("img/la-chouette-agence-banniere.webp");
     width: 100%;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation_resultat.webp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
