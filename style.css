@@ -98,10 +98,9 @@ h3 {
 
 /* Style de la citation */
 q {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-style: italic;
-    font-weight: bold;
-}
+    }
 
 .quote_owner { 
     font-weight: bold; 
@@ -109,7 +108,7 @@ q {
 }
 
 .blue_link { /* Lien cliquable vers site web de la citation */
-    color: #484849;
+    color: #1c1cad;
 }
 
 p {
