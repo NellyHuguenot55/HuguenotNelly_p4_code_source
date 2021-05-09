@@ -107,9 +107,6 @@ q {
     color: #575757;
 }
 
-.blue_link { /* Lien cliquable vers site web de la citation */
-    color: #1c1cad;
-}
 
 p {
     font-size: 1.1em;
@@ -244,11 +241,11 @@ label {
 }
 
 .d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
+    color: black;
 }
 
 .d-bloc .panel button:hover {
-    color: rgba(0, 0, 0, .7);
+    color: black;
 }
 
 .d-bloc .panel icon {
@@ -275,7 +272,7 @@ label {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: black;
 }
 
 .d-bloc .panel button:hover,
